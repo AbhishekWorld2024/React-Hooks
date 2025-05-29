@@ -1,0 +1,15 @@
+import React from 'react'
+import { useState } from 'react';
+
+function SetStateHook() {
+ const [count, setCount] = useState(0);
+ 
+   return (
+     <div>
+       <button onClick={() => setCount(count + 1)}>Click {count}</button>
+       <button onClick={() => setCount(0)}>Reset</button>
+     </div>
+   );
+ }
+
+export default SetStateHook
